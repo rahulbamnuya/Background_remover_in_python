@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grayscale Image</title>
+      <style>
+            body {
+                  background-color: white;
+                  /* Ensure white background */
+                  color: black;
+                  /* Ensure black text */
+                  font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                  text-align: center;
+            }
+
+            img {
+                  display: block;
+                  margin: 20px auto;
+                  border: 1px solid black;
+                  /* Optional: Add a border to the image */
+            }
+
+            a {
+                  text-align: center;
+                  color: black;
+                  text-decoration: none;
+            }
+      </style>
+</head>
+
+<body>
+      <h1>Converted Grayscale Image</h1>
+      <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Grayscale Image">
+      <a href="/">Go Back</a>
+</body>
+
+</html>
